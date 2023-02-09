@@ -1,0 +1,26 @@
+import javax.swing.JOptionPane; // programa utilizada joptionpane
+
+public class Calculadora
+{
+public static void main( String[]args )
+{
+    
+//obtém a  entrada de usuário a partir dos diálogos  de entrada JOptionPane
+    String firstNumber  =
+     JOptionPane.showInputDialog( "Insira altura" );
+    String secondNumber =
+    JOptionPane.showInputDialog ( "Insira peso" );
+    
+//converte  String em valores int para utilização em um calculo 
+float number1 = Float.parseFloat(firstNumber);
+float number2 = Float.parseFloat(secondNumber);
+
+float calculo = number2 / (number1 * number1);
+JOptionPane.showMessageDialog(null, "O imc do usuário é: " + calculo, "IMC", JOptionPane.PLAIN_MESSAGE);
+}
+
+}
+
+
+
+
